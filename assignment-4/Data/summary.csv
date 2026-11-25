@@ -1,0 +1,13 @@
+size,method,workers,worker_processes,physical_machines,median_end_to_end_ms,iqr_end_to_end_ms,median_compute_wait_ms,median_setup_ms,median_input_scatter_ms,median_result_collection_ms,median_worker_rss_max_sampled_mib,median_worker_rss_total_sampled_mib,median_memory_value_mib,memory_metric,samples,status,speedup_vs_sequential,strong_speedup_vs_one_worker,parallel_efficiency
+32,sequential,,,1,1.961900,0.220300,,,,,,,0.029739,peak traced Python allocations (tracemalloc),5/5,ok,1.000000,,
+32,threaded,,,1,2.938400,0.048900,,,,,,,0.078435,peak traced Python allocations (tracemalloc),5/5,ok,0.667676,,
+32,distributed,1,1,1,1486.471400,10.464100,6.042000,1389.146200,4.924100,1.531200,92.679688,92.679688,,"sampled worker-process RSS; max and sum across worker processes, not a continuous peak",5/5,ok,0.001320,1.000000,1.000000
+64,sequential,,,1,14.823400,0.608300,,,,,,,0.123734,peak traced Python allocations (tracemalloc),5/5,ok,1.000000,,
+64,threaded,,,1,16.239400,0.162600,,,,,,,0.192942,peak traced Python allocations (tracemalloc),5/5,ok,0.912805,,
+64,distributed,1,1,1,1511.894700,13.114200,26.360100,1385.013400,6.029700,1.870000,93.273438,93.273438,,"sampled worker-process RSS; max and sum across worker processes, not a continuous peak",5/5,ok,0.009805,1.000000,1.000000
+128,sequential,,,1,116.136300,5.109500,,,,,,,0.501892,peak traced Python allocations (tracemalloc),5/5,ok,1.000000,,
+128,threaded,,,1,118.044100,0.889500,,,,,,,0.545000,peak traced Python allocations (tracemalloc),5/5,ok,0.983838,,
+128,distributed,1,1,1,1568.841400,20.039000,64.831900,1370.490700,10.848600,3.595700,95.472656,95.472656,,"sampled worker-process RSS; max and sum across worker processes, not a continuous peak",5/5,ok,0.074027,1.000000,1.000000
+256,sequential,,,1,928.072800,10.271700,,,,,,,2.009796,peak traced Python allocations (tracemalloc),5/5,ok,1.000000,,
+256,threaded,,,1,929.630200,9.990900,,,,,,,2.074976,peak traced Python allocations (tracemalloc),5/5,ok,0.998325,,
+256,distributed,1,1,1,2113.457900,21.324900,380.835500,1392.230400,27.392600,9.864100,100.343750,100.343750,,"sampled worker-process RSS; max and sum across worker processes, not a continuous peak",5/5,ok,0.439125,1.000000,1.000000

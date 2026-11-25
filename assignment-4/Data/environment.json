@@ -1,0 +1,124 @@
+{
+  "assignment": 4,
+  "run_timestamp": "2026-11-24T19:28:46+00:00",
+  "python_version": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "operating_system": "Windows-10-10.0.19045-SP0",
+  "cpu_model": "AMD Ryzen 7 5700X3D 8-Core Processor",
+  "physical_cores": 8,
+  "logical_processors": 16,
+  "ram_total_gib": 15.921,
+  "physical_machines": 1,
+  "execution_scope": "Local Dask Distributed cluster on one physical machine; does not measure inter-machine network or aggregate multi-machine memory.",
+  "local_multiworker_permission": "Not asserted. Multi-worker runs require instructor approval and the explicit --instructor-permission option.",
+  "framework": "Dask Distributed LocalCluster",
+  "dask_version": "2024.12.1",
+  "distributed_version": "2024.12.1",
+  "numpy_version": "2.3.4",
+  "threadpoolctl_version": "3.6.0",
+  "sizes": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "workers_tested": [
+    1
+  ],
+  "worker_processes": [
+    1
+  ],
+  "threads_per_worker": 1,
+  "threaded_reference_threads": 4,
+  "affinity": "OS scheduler default; no CPU affinity pinning",
+  "block_size": 32,
+  "seed": 20261124,
+  "input_generator": "Python random.Random; integer-valued float64 in [-8, 8]",
+  "repetitions": 5,
+  "warmups_per_configuration": 1,
+  "task_wait_timeout_seconds": 60.0,
+  "memory_limit_mib": 2048.0,
+  "timing_boundary": "Distributed end-to-end: cluster/client startup, matrix partitioning, input scatter, task submission, wait, result gather and cluster shutdown, excluding the separate worker-memory sampling RPC. Input generation and correctness validation are excluded. Sequential/threaded rows time the method call only; memory tracing uses an additional untimed invocation.",
+  "transfer_measurements": "Input scatter and result gather wall times plus logical NumPy payload sizes; these are not isolated network-only measurements.",
+  "internal_library_threads": 1,
+  "internal_thread_controls": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "worker_threadpool_settings": [
+    {
+      "size": 32,
+      "workers": 1,
+      "processes": 1,
+      "threads_per_worker": 1,
+      "worker_threadpools": {
+        "tcp://127.0.0.1:56306": {
+          "pid": 24752,
+          "threadpools": [
+            {
+              "internal_api": "openblas",
+              "num_threads": 1,
+              "prefix": "libscipy_openblas"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "size": 64,
+      "workers": 1,
+      "processes": 1,
+      "threads_per_worker": 1,
+      "worker_threadpools": {
+        "tcp://127.0.0.1:56414": {
+          "pid": 9796,
+          "threadpools": [
+            {
+              "internal_api": "openblas",
+              "num_threads": 1,
+              "prefix": "libscipy_openblas"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "size": 128,
+      "workers": 1,
+      "processes": 1,
+      "threads_per_worker": 1,
+      "worker_threadpools": {
+        "tcp://127.0.0.1:56521": {
+          "pid": 10760,
+          "threadpools": [
+            {
+              "internal_api": "openblas",
+              "num_threads": 1,
+              "prefix": "libscipy_openblas"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "size": 256,
+      "workers": 1,
+      "processes": 1,
+      "threads_per_worker": 1,
+      "worker_threadpools": {
+        "tcp://127.0.0.1:56659": {
+          "pid": 15452,
+          "threadpools": [
+            {
+              "internal_api": "openblas",
+              "num_threads": 1,
+              "prefix": "libscipy_openblas"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "memory_measurement": "Sequential/threaded: peak tracemalloc allocations. Distributed: sampled process RSS in workers after result collection. Metrics have different scopes and must not be treated as directly equivalent.",
+  "distributed_aggregation": "Each output tile is a sum of products of matching A and B tiles; Dask futures schedule the tile products and reductions."
+}
