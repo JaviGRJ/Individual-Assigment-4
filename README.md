@@ -23,7 +23,6 @@ multiple local workers unless `--instructor-permission` is explicitly passed.
 - `generate_report.py`: render the report and figures into a PDF.
 - `requirements.txt`: pinned Python dependencies.
 - `results.csv`, `summary.csv`, `environment.json`: measurements and settings.
-- `REPORT.md`, `Assignment04_Javier_Guerra_Report.pdf`: report.
 
 ## Install and run
 
