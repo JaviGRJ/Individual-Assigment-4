@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760">
+<style>text{font-family:Arial,sans-serif;font-size:12px;fill:#17202a}.title{font-size:22px;font-weight:bold}.axis{stroke:#17202a;stroke-width:2}.grid{stroke:#d9e0e6}.bar{fill:#357edd}</style>
+<text x="700.0" y="34" text-anchor="middle" class="title">Assignment 4 speedup vs sequential</text>
+<line x1="95" y1="70" x2="95" y2="530" class="axis"/>
+<line x1="95" y1="530" x2="1370" y2="530" class="axis"/>
+<text x="22" y="300.0" transform="rotate(-90 22 300.0)" text-anchor="middle">Speedup (ratio)</text>
+<line x1="95" y1="530.00" x2="1370" y2="530.00" class="grid"/>
+<text x="87" y="534.00" text-anchor="end">0.00</text>
+<line x1="95" y1="438.00" x2="1370" y2="438.00" class="grid"/>
+<text x="87" y="442.00" text-anchor="end">0.20</text>
+<line x1="95" y1="346.00" x2="1370" y2="346.00" class="grid"/>
+<text x="87" y="350.00" text-anchor="end">0.40</text>
+<line x1="95" y1="254.00" x2="1370" y2="254.00" class="grid"/>
+<text x="87" y="258.00" text-anchor="end">0.60</text>
+<line x1="95" y1="162.00" x2="1370" y2="162.00" class="grid"/>
+<text x="87" y="166.00" text-anchor="end">0.80</text>
+<line x1="95" y1="70.00" x2="1370" y2="70.00" class="grid"/>
+<text x="87" y="74.00" text-anchor="end">1.00</text>
+<rect x="110.94" y="70.00" width="74.38" height="460.00" class="bar"><title>sequential n=32 w=n/a: 1.000000</title></rect>
+<text x="148.12" y="548" transform="rotate(58 148.12 548)">sequential n=32 w=n/a</text>
+<rect x="217.19" y="222.87" width="74.38" height="307.13" class="bar"><title>threaded n=32 w=n/a: 0.667676</title></rect>
+<text x="254.38" y="548" transform="rotate(58 254.38 548)">threaded n=32 w=n/a</text>
+<rect x="323.44" y="529.39" width="74.38" height="0.61" class="bar"><title>distributed n=32 w=1: 0.001320</title></rect>
+<text x="360.62" y="548" transform="rotate(58 360.62 548)">distributed n=32 w=1</text>
+<rect x="429.69" y="70.00" width="74.38" height="460.00" class="bar"><title>sequential n=64 w=n/a: 1.000000</title></rect>
+<text x="466.88" y="548" transform="rotate(58 466.88 548)">sequential n=64 w=n/a</text>
+<rect x="535.94" y="110.11" width="74.38" height="419.89" class="bar"><title>threaded n=64 w=n/a: 0.912805</title></rect>
+<text x="573.12" y="548" transform="rotate(58 573.12 548)">threaded n=64 w=n/a</text>
+<rect x="642.19" y="525.49" width="74.38" height="4.51" class="bar"><title>distributed n=64 w=1: 0.009805</title></rect>
+<text x="679.38" y="548" transform="rotate(58 679.38 548)">distributed n=64 w=1</text>
+<rect x="748.44" y="70.00" width="74.38" height="460.00" class="bar"><title>sequential n=128 w=n/a: 1.000000</title></rect>
+<text x="785.62" y="548" transform="rotate(58 785.62 548)">sequential n=128 w=n/a</text>
+<rect x="854.69" y="77.43" width="74.38" height="452.57" class="bar"><title>threaded n=128 w=n/a: 0.983838</title></rect>
+<text x="891.88" y="548" transform="rotate(58 891.88 548)">threaded n=128 w=n/a</text>
+<rect x="960.94" y="495.95" width="74.38" height="34.05" class="bar"><title>distributed n=128 w=1: 0.074027</title></rect>
+<text x="998.12" y="548" transform="rotate(58 998.12 548)">distributed n=128 w=1</text>
+<rect x="1067.19" y="70.00" width="74.38" height="460.00" class="bar"><title>sequential n=256 w=n/a: 1.000000</title></rect>
+<text x="1104.38" y="548" transform="rotate(58 1104.38 548)">sequential n=256 w=n/a</text>
+<rect x="1173.44" y="70.77" width="74.38" height="459.23" class="bar"><title>threaded n=256 w=n/a: 0.998325</title></rect>
+<text x="1210.62" y="548" transform="rotate(58 1210.62 548)">threaded n=256 w=n/a</text>
+<rect x="1279.69" y="328.00" width="74.38" height="202.00" class="bar"><title>distributed n=256 w=1: 0.439125</title></rect>
+<text x="1316.88" y="548" transform="rotate(58 1316.88 548)">distributed n=256 w=1</text>
+<text x="732.5" y="742" text-anchor="middle">Configuration</text>
+</svg>

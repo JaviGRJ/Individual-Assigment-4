@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760">
+<style>text{font-family:Arial,sans-serif;font-size:12px;fill:#17202a}.title{font-size:22px;font-weight:bold}.axis{stroke:#17202a;stroke-width:2}.grid{stroke:#d9e0e6}.bar{fill:#357edd}</style>
+<text x="700.0" y="34" text-anchor="middle" class="title">Assignment 4 sampled worker memory</text>
+<line x1="95" y1="70" x2="95" y2="530" class="axis"/>
+<line x1="95" y1="530" x2="1370" y2="530" class="axis"/>
+<text x="22" y="300.0" transform="rotate(-90 22 300.0)" text-anchor="middle">Sum of sampled worker RSS (MiB)</text>
+<line x1="95" y1="530.00" x2="1370" y2="530.00" class="grid"/>
+<text x="87" y="534.00" text-anchor="end">0.00</text>
+<line x1="95" y1="438.00" x2="1370" y2="438.00" class="grid"/>
+<text x="87" y="442.00" text-anchor="end">20.07</text>
+<line x1="95" y1="346.00" x2="1370" y2="346.00" class="grid"/>
+<text x="87" y="350.00" text-anchor="end">40.14</text>
+<line x1="95" y1="254.00" x2="1370" y2="254.00" class="grid"/>
+<text x="87" y="258.00" text-anchor="end">60.21</text>
+<line x1="95" y1="162.00" x2="1370" y2="162.00" class="grid"/>
+<text x="87" y="166.00" text-anchor="end">80.28</text>
+<line x1="95" y1="70.00" x2="1370" y2="70.00" class="grid"/>
+<text x="87" y="74.00" text-anchor="end">100.34</text>
+<rect x="142.81" y="105.13" width="223.12" height="424.87" class="bar"><title>distributed n=32 w=1: 92.679688</title></rect>
+<text x="254.38" y="548" transform="rotate(58 254.38 548)">distributed n=32 w=1</text>
+<rect x="461.56" y="102.41" width="223.12" height="427.59" class="bar"><title>distributed n=64 w=1: 93.273438</title></rect>
+<text x="573.12" y="548" transform="rotate(58 573.12 548)">distributed n=64 w=1</text>
+<rect x="780.31" y="92.33" width="223.12" height="437.67" class="bar"><title>distributed n=128 w=1: 95.472656</title></rect>
+<text x="891.88" y="548" transform="rotate(58 891.88 548)">distributed n=128 w=1</text>
+<rect x="1099.06" y="70.00" width="223.12" height="460.00" class="bar"><title>distributed n=256 w=1: 100.343750</title></rect>
+<text x="1210.62" y="548" transform="rotate(58 1210.62 548)">distributed n=256 w=1</text>
+<text x="732.5" y="742" text-anchor="middle">Configuration</text>
+</svg>
